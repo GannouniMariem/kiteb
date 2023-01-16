@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+     <!-- CSS LINKS -->
+     <link rel="stylesheet" href="/css/reset.css">
+     <link rel="stylesheet" href="/css/base.css">
+     <link rel="stylesheet" href="/css/style.css">
+
+     <!-- CDN GOOGLE FONT ICON -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+            
+    <section class="m-4 py-lg-2 bg-white shadow bg-body rounded">
+        <div class="px-lg-5 px-md-2 ">
+          <!-- start Navbar -->
+             <nav class="navbar navbar-expand-lg bg-white fixed">
+                 <div class="container-fluid">
+                 <a class="navbar-brand" href="/homePage.html" target="_blank"><img src="/assets/logo.png" class="img-fluid" alt=""></a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                         <a class="nav-link text-hover fs-15" href="#">Qui sommes nous ?</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link text-hover fs-15" href="#">Programme</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link text-hover fs-15" href="/map.html" target="_blank">Map</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link text-hover fs-15" href="#">Media</a>
+                     </li>  <li class="nav-item">
+                         <a class="nav-link text-hover fs-15" href="/contactus.html" target="_blank">Contactez-nous</a>
+                     </li>
+                     </ul>
+
+                     <div class="dropdown">
+                        <button class="btn d-flex " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/assets/profile.png" class="rounded-circle border-gray" alt="">
+                               <div class="mx-2 my-0">
+                                    <p class="fs-14 fw-semibold">Malek Sallemi</p>
+                                    <p class="text-start fs-14">Client</p>
+                               </div>
+                               <span class="material-symbols-outlined mt-2 mx-3 fw-semibold">
+                                expand_more
+                                </span>
+                        </button>
+                        <ul class="dropdown-menu border-0 text-center shadow-lg p-3 mb-5 bg-body rounded">
+                          <li class="fw-semibold fs-14"><a class="dropdown-item" href="#">Mes tickets</a>
+                            <hr class=" m-0 op-1 mx-5">
+                          </li>
+                          <li class="fs-14"><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                      </div>
+                 </div>
+                 </div>
+             </nav>
+         <!-- end Navbar -->
+        </div>
+             
+        
+        <!--Start Ticket-->
+        <div class="my-5 text-center">
+          <p class="fs-32 fw-semibold my-3">My tickets</p>
+          <p class="fs-16 fw-normal op-black-7 my-2">Voici la liste des stands qui n'ont pas été encore réservés. Vous pouvez choisir le stand que vous souhaitez réserver.</p>
+      </div>
+
+          <div class="container shadow px-0 mb-5 bg-body rounded">
+              <div class="row px-0 gx-0">
+                <div class="col-lg-4 col-12 d-flex justify-content-start">
+                    <div><img src="/assets/border.png" alt=""></div>
+                      <div class="mx-auto my-5">
+                          <div><img src="/assets/ticketlogo.png" alt=""></div>
+                          <div class="bg-gray-light p-3 my-3">
+                            <p class="fs-14 text-gray-op-3">Numéro  du visiteur : 50</p>
+                            <hr class="w-25 m-0 op-1">
+                            <p class="fs-16 fw-semibold py-1">Prix: <span class="text-red">10 dt</span></p>
+                            <hr class="w-25 m-0 op-1 mb-3">
+                            <p class="fs-15 py-1">Nom : <span class="text-red">Gannouni</span></p>
+                            <p class="fs-15 py-1">Prénom : <span class="text-red">Chaima</span></p>
+                            <p class="fs-15 py-1">Nombre de jour : <span class="text-red">10</span></p>
+                            
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-8 col-12 d-flex justify-content-end ">
+                      <div class="d-none d-lg-block">
+                          <img src="/assets/ticket.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+              </div>
+
+              
+          </div>
+        <!--End Ticket-->
+        <div class=" container text-end">
+          <a href="" class="btn btn-outline-red hover-btn-red text-red fs-18 ">Suprimer</a>
+          <a href="" class="btn btn-dark fs-18 ">Imprimer</a>
+      </div>
+              
+         <!-- start Inscription Section -->
+         <div class="container-fluid Inscription-section box-shadow  p-5 mt-5 bg-gray-light rounded text-center">
+             <div class="p-lg-5">
+               <p class="fs-32 fw-semibold">N'hésitez pas à nous rejoindre dès <span class="text-red">maintenant</span></p>
+               <p class="fs-14 fw-normal op-black-7 p-3 my-2">N’hésitez pas à nous rejoindre dès maintenant comme un exposantou un participant.</p>
+                   
+               <div class="my-3">
+                 <a href="#" class="btn btn-dark fs-18 my-2 px-4 py-3 my-lg-0 my-md-2">Acheter un ticket</a>
+                 <a href="#" class="btn btn-outline-dark fs-18 my-2 px-4 py-3 my-lg-0 my-md-2">Reserver un stand</a>
+               </div>
+             </div>        
+         </div>
+         <!-- end Inscription Section -->
+    
+         <!-- Start Footer Section -->
+         <footer class="mt-5 mb-3 mx-5">
+             <div class="container-fluid">
+                 <div class="row">
+                   <div class="col-12 col-sm-6 col-lg mb-3 mb-lg-0">
+                       <div>
+                           <img src="/assets/footer-logo.png" alt="">
+                           <p class="text-gray-op fs-14 py-3">Le Salon International du Livre de Tunis est un événement culturel annuel organisé par le Ministère de la Culture et de la Préservation du Patrimoine et qui se tient au Palais des Expositions de Karam.</p>
+                           <div class="w-25 d-flex justify-content-between">
+                               <img src="/assets/facebook.svg" alt="">
+                               <img src="/assets/youtube.svg" alt="">
+                               <img src="/assets/insta.svg" alt="">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-4  col-sm-6 col-lg d-flex justify-content-center">
+                       <ul>
+                         <li class="fw-semibold fs-14  py-2">Legal</li>
+                         <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Terms of use</a></li>
+                         <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Privacy policy</a></li>
+                         <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Legal notice </a></li>
+                     
+                       </ul>
+                   </div>
+                   <div class="col-4 col-sm-6 col-lg d-flex justify-content-lg-center">
+                     <ul>
+                       <li class="fw-semibold fs-14  py-2">Liens</li>
+                       <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Qui sommes nous ?</a></li>
+                       <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Programme</a></li>
+                       <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Map </a></li>
+                     </ul>
+   
+                   </div>
+                   <div class="col-4 col-sm-6 col-lg d-flex justify-content-center align-items-center">
+                     <ul>
+                       <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Media</a></li>
+                       <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Contactez-nous </a></li>
+                     </ul>
+                   </div>
+                   <div class="col-12 col-lg">
+                         
+                             <p class="fw-semibold fs-14 mb-2 mb-lg-5">Newsletter</p>
+                           
+                             <div class="input-group pt-lg-4 pb-3">
+                               <input type="email" class="form-control" placeholder="Work Email" aria-label="Work Email" aria-describedby="button-addon2">
+                               <button class="btn bg-dark text-white" type="button" id="button-addon2"><img src="/assets/send-email.svg" alt=""></button>
+                             </div>
+                     
+                   </div>
+                 </div>
+                 <p class="op-black-7 fs-14 text-center pb-2 pb-lg-0"> © 2023 Foire du livre   Mentions légales et politique de confidentialité</p>
+             </div>
+         </footer>
+         <!-- End Footer Section -->
+  
+     </section>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>

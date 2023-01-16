@@ -43,11 +43,14 @@ ul{
     list-style: none;
 }
 
-
 /************************ BOOTSTRAP RESET ************************/
 
 .btn{
     border-radius: 0;
+}
+
+.btn:focus{
+    border: none;
 }
 
 .accordion-item{
