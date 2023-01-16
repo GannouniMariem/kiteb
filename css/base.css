@@ -1,0 +1,173 @@
+/************************ COLORS ************************/
+/* background-color */
+.bg-red{
+    background-color: #BE202F;
+}
+
+.op-black-7{
+    color: rgba(0,0,0,0.7);
+}
+
+.bg-gray-opacity-4{
+    background-color: rgba(0, 0, 0, 0.048);
+}
+
+.bg-red-opacity-2{
+    background-color: rgba(191, 33, 49,0.2);
+}
+
+.bg-gray{
+    background-color: #E7E7E7;
+}
+
+.bg-gray-light{
+    background-color: #F6F6F6;
+}
+
+/* text-colors */
+.text-red{
+    color: #BE202F;
+}
+
+.text-gray-op-7{
+    color: rgba(14, 15, 17,0.7);
+}
+.text-gray-op{
+    color: rgba(14, 15, 17,.5);
+}
+
+
+/************************ FONTS ************************/
+/* font-family */
+
+.f-Poppins{
+    font-family:'Poppins', sans-serif;
+}
+/* font-size */
+.fs-14{
+    font-size: 14px;
+}
+
+.fs-15{
+    font-size: 15px;
+}
+
+.fs-16{
+    font-size: 16px;
+}
+
+.fs-18{
+    font-size: 18px;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-22{
+    font-size: 22px;
+}
+
+.fs-27{
+    font-size: 27px;
+}
+.fs-28{
+    font-size: 28px;
+}
+
+.fs-32{
+    font-size: 32px;
+}
+
+.fs-42{
+    font-size: 42px;
+}
+
+.fs-67{
+    font-size: 67px;
+}
+
+/* text-align */
+.text-justify{
+    text-align: justify;
+}
+
+/************************ BOX MODEL ************************/
+
+
+.box-shadow{
+    box-shadow: .5rem -1rem 1rem rgba(0,0,0,.05)!important;
+}
+
+
+/*w-lg-50 For large devices "laptop.." the element width will take 50% of his parent" */
+@media screen and (min-width:992px) {
+    .w-lg-50{
+        width: 50%;
+    }
+    
+}
+/*w-sm-100 For small devices "smartPhone.." the element width will take 100% of his parent" */
+@media screen and (min-width:576px) {
+    .w-sm-100{
+        width: 100%;
+    }
+    
+}
+
+.border-red{
+    border: 6px solid #BE202F !important;
+}
+
+/************************ FORM ************************/
+
+
+/************************ POSITION ************************/
+
+.p-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*text align center -vertical- */
+.text-v-center{
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/************************ SELECTORS ************************/
+/* hover */
+.text-hover:hover{
+    color: #000;
+    font-weight: 600;
+}
+
+.hover-btn-red:hover{
+    background-color: #fff;
+    color: #BE202F !important;
+    border: 1px solid #BE202F;
+}
+.hover-btn-dark:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #000;
+}
+
+
+/* focus */
+.focus-bg-red:focus {
+    background-color: #8E1924 !important;
+}
+
+.focus-border-dark:focus {
+    border:1px solid #000 !important;
+}
+
+
+
+
+/**/
