@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- CDN GOOGLE FONT ICON -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+
+    <section class="m-4 py-lg-2 bg-white shadow bg-body rounded">
+        <!--Start Navbar-->
+        <div class="px-lg-5 px-md-2 ">
+          <!-- start Navbar -->
+             <nav class="navbar navbar-expand-lg bg-white fixed">
+                 <div class="container-fluid">
+                 <a class="navbar-brand" href="/homePage.html" target="_blank"><img src="/assets/logo.png" class="img-fluid" alt=""></a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                         <a class="nav-link text-hover fs-15" href="#">Qui sommes nous ?</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link text-hover fs-15" href="#">Programme</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link text-hover fs-15" href="/map.html" target="_blank">Map</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link text-hover fs-15" href="#">Media</a>
+                     </li>  <li class="nav-item">
+                         <a class="nav-link text-hover fs-15" href="/contactus.html" target="_blank">Contactez-nous</a>
+                     </li>
+                     </ul>
+
+                     <div class="dropdown">
+                        <button class="btn d-flex " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/assets/profile.png" class="rounded-circle border-gray" alt="">
+                               <div class="mx-2 my-0">
+                                    <p class="fs-14 fw-semibold">Malek Sallemi</p>
+                                    <p class="text-start fs-14">Client</p>
+                               </div>
+                               <span class="material-symbols-outlined mt-2 mx-3 fw-semibold">
+                                expand_more
+                                </span>
+                        </button>
+                        <ul class="dropdown-menu border-0 text-center shadow-lg p-3 mb-5 bg-body rounded">
+                          <li class="fw-semibold fs-14"><a class="dropdown-item" href="#">Mes tickets</a>
+                            <hr class=" m-0 op-1 mx-5">
+                          </li>
+                          <li class="fs-14"><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                      </div>
+                 </div>
+                 </div>
+             </nav>
+         <!-- end Navbar -->
+        </div>
+        <!--End Navbar-->
+
+        <div class="my-5 text-center">
+            <p class="fs-32 fw-semibold my-3">Mes stands</p>
+            <p class="fs-16 fw-normal op-black-7 my-2">Voici la liste des stands qui n'ont pas été encore réservés. Vous pouvez choisir le stand que vous souhaitez réserver.</p>
+        </div>
+
+        <!--Start Filtre-->
+
+        <div class="container-fluid">
+            <!-- Start Filtre black -->
+                    <div class="row bg-semi-dark m-0">
+                                <div class="col-lg-8">
+                                    <a class="btn p-lg-4 text-white focus-bg-black" href="#collapseExample">
+                                        <span class="text-center" type="button">
+                                            <span class="fs-18 fw-normal">Par jour</span>
+                                        </span>
+                                    </a>
+                            
+                                </div>
+                                <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                                    <input type="text" placeholder="Rechercher..." class="form-control w-lg-50 my-3" >
+                                </div>
+                    </div>
+            <!-- End Filtre black -->
+
+            <div class="position-relative">
+                <!-- Start Calendar -->
+                <div class="bg-red bg-red m-0 my-3 p-0 d-flex flex-wrap flex-lg-nowrap justify-content-around ">
+                    <a class="btn  text-white px-4 focus-bg-red" href="#collapseExample" id="headingOne" role="button">
+                            <span class="text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="day d-block fs-18 fw-normal">Ven.</span>
+                                <span class="date d-block fs-32 fw-semibold">28</span>
+                                <span class="month d-block fs-18 fw-normal">Février</span>
+                            </span>
+                    </a>
+
+                    <a class="btn collaps-btn  text-white  px-4 focus-bg-red" href="#collapseExample" id="headingTwo">
+                        <span class=" collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span class="day d-block fs-18 fw-normal">sam.</span>
+                            <span class="date d-block fs-32 fw-semibold">29</span>
+                            <span class="month d-block fs-18 fw-normal">Février</span>
+                        </span>
+                    </a>
+
+                    <a class="btn collaps-btn  text-white  px-4 focus-bg-red" href="#collapseExample" id="headingThree">
+                        <span class="collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                            <span class="day d-block fs-18 fw-normal">Dim.</span>
+                            <span class="date d-block fs-32 fw-semibold">30</span>
+                            <span class="month d-block fs-18 fw-normal">Février</span>
+                        </span>
+                    </a>
+
+                    <a class="btn collaps-btn  text-white  px-4 focus-bg-red" href="#collapseExample" id="headingfour">
+                        <span class="collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            <span class="day d-block fs-18 fw-normal">Lun.</span>
+                            <span class="date d-block fs-32 fw-semibold">01</span>
+                            <span class="month d-block fs-18 fw-normal">Mars</span>
+                        </span>
+                    </a>
+
+                    <a class="btn collaps-btn  text-white  px-4 focus-bg-red" href="#collapseExample" id="headingfive">
+                        <span class="collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            <span class="day d-block fs-18 fw-normal">Mar.</span>
+                            <span class="date d-block fs-32 fw-semibold">02</span>
+                            <span class="month d-block fs-18 fw-normal">Mars</span>
+                        </span>
+                    </a>
+
+                    <a class="btn collaps-btn  text-white  px-4 focus-bg-red" href="#collapseExample" id="headingsix">
+                        <span class="collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+
+                            <span class="day d-block fs-18 fw-normal">Mer.</span>
+                            <span class="date d-block fs-32 fw-semibold">03</span>
+                            <span class="month d-block fs-18 fw-normal">Mars</span>
+                        </span>
+                    </a>
+
+                    <a class="btn collaps-btn  text-white  px-4 focus-bg-red" href="#collapseExample" id="headingseven">
+                        <span class="collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                            <span class="day d-block fs-18 fw-normal">Jud.</span>
+                            <span class="date d-block fs-32 fw-semibold">04</span>
+                            <span class="month d-block fs-18 fw-normal">Mars</span>
+                        </span>
+                    </a>
+
+                    <a class="btn collaps-btn  text-white  px-4 focus-bg-red" href="#collapseExample" id="headingeight">
+                        <span class="collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                            <span class="day d-block fs-18 fw-normal">Ven.</span>
+                            <span class="date d-block fs-32 fw-semibold">54</span>
+                            <span class="month d-block fs-18 fw-normal">Mars</span>
+                        </span>
+                    </a>
+
+                    <a class="btn collaps-btn  text-white  px-4 focus-bg-red" href="#collapseExample" id="headingnine">
+                        <span class="collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+                            <span class="day d-block fs-18 fw-normal">sam.</span>
+                            <span class="date d-block fs-32 fw-semibold">06</span>
+                            <span class="month d-block fs-18 fw-normal">Mars</span>
+                        </span>
+                    </a>
+                    <a class="btn collaps-btn  text-white  px-4 focus-bg-red" href="#collapseExample" id="headingten">
+                        <span class="collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+                            <span class="day d-block fs-18 fw-normal">Dim.</span>
+                            <span class="date d-block fs-32 fw-semibold">07</span>
+                            <span class="month d-block fs-18 fw-normal">Mars</span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Start Calendar -->
+
+                <!-- Start Program -->
+                
+                <div class="accordion-body mx-lg-5 my-4 shadow p-lg-5 bg-body rounded">
+                  <div class="row border-bottom py-3 mx-0">
+                      <table class="table">
+                          <thead>
+                            <tr class="table-light">
+                              <th scope="col">Local</th>
+                              <th scope="col">Date</th>
+                              <th scope="col">Prix</th>
+                              <th scope="col">Surface</th>
+                              <th scope="col">Heure</th>
+                              <th scope="col">Option</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">La salle C8</th>
+                              <td>09/02/22</td>
+                              <td>10DT</td>
+                              <td>15 m²</td>
+                              <td>
+                                  <p class="d-flex text-center border-dark w p-1">
+                                      <span class="mx-2">10:30 AM</span>
+                                      <span class="material-symbols-outlined">
+                                              schedule
+                                      </span>
+                                  </p>
+                                  
+                              </td>
+                              <td><a href="" class="btn bg-red text-white fs-18 px-4">Annuler</a></td>
+                            </tr>
+                            
+                            <tr>
+                              <th scope="row">La salle C8</th>
+                              <td>09/02/22</td>
+                              <td>10DT</td>
+                              <td>15 m²</td>
+                              <td>
+                                  <p class="d-flex text-center border-dark w p-1">
+                                      <span class="mx-2">10:30 AM</span>
+                                      <span class="material-symbols-outlined">
+                                              schedule
+                                      </span>
+                                  </p>
+                                  
+                              </td>
+                              <td><a href="" class="btn bg-red text-white fs-18 px-4">Annuler</a></td>
+                            </tr>
+                            
+                            <tr>
+                              <th scope="row">La salle C8</th>
+                              <td>09/02/22</td>
+                              <td>10DT</td>
+                              <td>15 m²</td>
+                              <td>
+                                  <p class="d-flex text-center border-dark w p-1">
+                                      <span class="mx-2">10:30 AM</span>
+                                      <span class="material-symbols-outlined">
+                                              schedule
+                                      </span>
+                                  </p>
+                                  
+                              </td>
+                              <td><a href="" class="btn bg-red text-white fs-18 px-4">Annuler</a></td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                  </div>
+
+                  
+              </div>
+                <!-- Start Program -->
+
+            </div>
+
+        </div>
+        <!--End Filtre-->
+
+               <!-- start Inscription Section -->
+               <div class="container-fluid Inscription-section box-shadow  p-5 mt-5 bg-gray-light rounded text-center">
+                <div class="p-lg-5">
+                  <p class="fs-32 fw-semibold">N'hésitez pas à nous rejoindre dès <span class="text-red">maintenant</span></p>
+                  <p class="fs-14 fw-normal op-black-7 p-3 my-2">N’hésitez pas à nous rejoindre dès maintenant comme un exposantou un participant.</p>
+                      
+                  <div class="my-3">
+                    <a href="#" class="btn btn-dark fs-18 my-2 px-4 py-3 my-lg-0 my-md-2">Acheter un ticket</a>
+                    <a href="#" class="btn btn-outline-dark fs-18 my-2 px-4 py-3 my-lg-0 my-md-2">Reserver un stand</a>
+                  </div>
+                </div>        
+            </div>
+            <!-- end Inscription Section -->
+    
+    
+            <!-- Start Footer Section -->
+            <footer class="mt-5 mb-3 mx-5">
+                <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-12 col-sm-6 col-lg mb-3 mb-lg-0">
+                          <div>
+                              <img src="/assets/footer-logo.png" alt="">
+                              <p class="text-gray-op fs-14 py-3">Le Salon International du Livre de Tunis est un événement culturel annuel organisé par le Ministère de la Culture et de la Préservation du Patrimoine et qui se tient au Palais des Expositions de Karam.</p>
+                              <div class="w-25 d-flex justify-content-between">
+                                  <img src="/assets/facebook.svg" alt="">
+                                  <img src="/assets/youtube.svg" alt="">
+                                  <img src="/assets/insta.svg" alt="">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4  col-sm-6 col-lg d-flex justify-content-center">
+                          <ul>
+                            <li class="fw-semibold fs-14  py-2">Legal</li>
+                            <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Terms of use</a></li>
+                            <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Privacy policy</a></li>
+                            <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Legal notice </a></li>
+                        
+                          </ul>
+                      </div>
+                      <div class="col-4 col-sm-6 col-lg d-flex justify-content-lg-center">
+                        <ul>
+                          <li class="fw-semibold fs-14  py-2">Liens</li>
+                          <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Qui sommes nous ?</a></li>
+                          <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Programme</a></li>
+                          <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Map </a></li>
+                        </ul>
+      
+                      </div>
+                      <div class="col-4 col-sm-6 col-lg d-flex justify-content-center align-items-center">
+                        <ul>
+                          <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Media</a></li>
+                          <li><a href="#" class="text-gray-op text-decoration-none fs-14 d-block py-2">Contactez-nous </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-lg">
+                            
+                                <p class="fw-semibold fs-14 mb-2 mb-lg-5">Newsletter</p>
+                              
+                                <div class="input-group pt-lg-4 pb-3">
+                                  <input type="email" class="form-control" placeholder="Work Email" aria-label="Work Email" aria-describedby="button-addon2">
+                                  <button class="btn bg-dark text-white" type="button" id="button-addon2"><img src="/assets/send-email.svg" alt=""></button>
+                                </div>
+                        
+                      </div>
+                    </div>
+                    <p class="op-black-7 fs-14 text-center pb-2 pb-lg-0"> © 2023 Foire du livre   Mentions légales et politique de confidentialité</p>
+                </div>
+            </footer>
+            <!-- End Footer Section -->
+
+        <!--End Filtre-->
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
